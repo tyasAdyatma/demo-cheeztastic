@@ -1,0 +1,410 @@
+html{
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%;
+    scroll-behavior: smooth;
+}
+body{
+ margin-left: 0;
+ margin-right: 0;
+ margin-top: 0;
+}
+header {
+    background-image: url("rect7442.webp");
+    background-position-x: center;
+    display: flex;
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column;
+}
+.logo-gede {
+    width: 10vw;
+    margin: 1lh auto;
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+  }
+  .judul{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    align-items: center;
+    font-size: 10vw;
+    justify-content: center;
+    margin: 0;
+  }
+  .slogan{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    align-items: center;
+    padding-top: 2rem;
+  }
+
+  /* AWAL NAVBAR */
+/* === Basic Style === */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+  .navbar {
+    width: 100%;
+    background: #f2ae2a;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: 250ms; 
+  }
+
+
+  /* === Inner nav === */
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  /* Logo kiri */
+  .logo {
+    flex: 1;
+    opacity: 0;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  nav.sticky .logo{
+    opacity: 1;
+  }
+  .logo img {
+    height: 40px;
+  }
+  
+  /* Nav tengah */
+  .nav-center {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .nav-center a {
+    color: #4e2208;
+    text-decoration: none;
+    font-weight: bold;
+    align-content: center;
+    padding: 12px 12px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .nav-center :hover{
+    background-color: #4e2208;
+    color: #f2ae2a;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 500ms;
+    box-shadow: 16px 8px 24px #C2840C,
+    -16px -8px 24px #F5C15D;
+  }
+  
+  /* CTA kanan */
+  .cta {
+    flex: 1;
+    text-align: right;
+    opacity: 0;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  
+  a.btn-pesan {
+    padding: 5px 10px;
+    margin-right: 8px;
+    background: #f2ae2a;
+    color: #4e2208;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: default;
+  }
+  .sticky .cta{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .sticky .btn-pesan:hover{
+    border-radius: 6px;
+    padding: 10px 16px;
+    color: #f2ae2a;
+    background: #4e2208;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 500ms;
+    box-shadow: 16px 8px 24px #C2840C,
+                -16px -8px 24px #F5C15D;
+    cursor: pointer;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    box-shadow: 0px 2px 25px 0px rgba(0,0,0,0.25);
+    z-index: 10;
+  }
+        
+  
+  /* === Sticky Class === */
+
+  
+  /* === Mobile Nav === */
+  .mobile-nav {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .mobile-logo {
+    height: 32px;
+  }
+  .mobile-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .burger {
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  
+  .mobile-menu.show {
+    display: flex;
+  }
+  .mobile-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .mobile-menu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .mobile-menu a:hover {
+    color: #f1f1f1;
+  }
+  
+  .mobile-menu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .mobile-menu {padding-top: 15px;}
+    .mobile-menu a {font-size: 18px;}
+  }
+  
+  /* === Responsive === */
+  @media (max-width: 768px) {
+    .nav-center,
+    .cta,
+    .logo {
+      display: none;
+    }
+    .mobile-nav {
+      display: flex;
+    }
+  }
+  
+/* AKHIR NAVBAR */
+
+/* AWAL ARTIKEL */
+.produk {
+    padding-top: 75px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.produk h2{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-bottom: 50px;
+}
+.produk-wrapper {
+    display: flex;
+    justify-content: center; /* tengahin horizontal */
+    align-items: stretch;
+    gap: 40px;
+    flex-wrap: wrap; /* biar tetap responsif pas layar kecil */
+    padding: 40px 20px;
+  }
+  
+  .produk-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 330px;
+    height: 475px;
+    padding: 20px;
+
+    transition: transform 0.3s ease;
+  }
+  
+  .produk-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 7px 7px 25px #dddddd,
+                -7px -7px 25px #fffaf1;
+  }
+  
+  .produk-card img {
+    width: 100%;
+    height: 55%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .produk-card h3 {
+    font-size: 1.3rem;
+    padding-top: 20px;
+    padding-bottom: 2px;
+    margin: 10px 0 5px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .produk-card p {
+    font-size: 0.95rem;
+    color: #666;
+    text-align: center;
+  }
+  .produk-card h4{
+    color: #4e2208;
+    padding-top: 25px;
+    font-size: 1.5rem;
+  }
+.artikel{
+    padding-top: 95px;
+}
+.bahan {
+    display: flex;
+    align-items: start;
+    justify-items: left;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.bahan-img {
+    flex: 1;
+    min-width: 35vw;
+    margin-left: 15px;
+    padding-right: 25px;
+    border-right: 3px solid #ddd;   
+}
+.bahan-img img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.bahan-teks {
+    flex: 1;
+    background-color: #ffffff;
+    margin-left: 75px;
+}
+.bahan-teks h3 {
+    font-size: 3vw;
+    margin-bottom: 15px;
+    margin-right: 75px;
+    color: #333;
+}
+.bahan-teks p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+.proses {
+    display: flex;
+    align-items: start;
+    justify-items: right;
+    gap: 40px;
+    padding-top: 100px;
+    flex-wrap: wrap;
+}
+.proses-img {
+    flex: 1;
+    min-width: 35vw;
+    margin-right: 15px;
+    padding-left: 25px;
+    border-left: 3px solid #ddd;    /* garis abu-abu atas */
+}
+.proses-img img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.proses-teks {
+    flex: 1;
+    background-color: #ffffff;
+    
+    margin-left: 75px;
+    padding-left: 25px;
+}
+.proses-teks h3 {
+    font-size: 3vw;
+    margin-bottom: 15px;
+    margin-left: 75px;
+    color: #333;
+}
+.proses-teks p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+.racik {
+    display: flex;
+    align-items: start;
+    justify-items: left;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding-top: 100px;
+}
+.racik-img {
+    flex: 1;
+    min-width: 35vw;
+    margin-left: 15px;
+    padding-right: 25px;
+    border-right: 3px solid #ddd;   
+}
+.racik-img img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.racik-teks {
+    flex: 1;
+    background-color: #ffffff;
+    margin-left: 75px;
+}
+.racik-teks h3 {
+    font-size: 3vw;
+    margin-bottom: 15px;
+    margin-right: 75px;
+    color: #333;
+}
+.racik-teks p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+.contact {
+    background-color: #C2840C;
+    text-align: center;
+}

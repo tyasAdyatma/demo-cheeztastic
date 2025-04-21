@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="pesan">
+        <h2>Form Pemesanan</h2>
+        <form id="order-form">
+          <label for="nama">Nama:</label>
+          <input type="text" name="nama" required>
+      
+          <label for="produk">Produk:</label>
+          <select name="produk" required>
+            <option value="Cheese Roll">Cheese Roll</option>
+            <option value="CheeseCuit">CheeseCuit</option>
+          </select>
+      
+          <label for="jumlah">Jumlah:</label>
+          <input type="number" name="jumlah" min="1" required>
+      
+          <label for="alamat">Alamat Pengiriman:</label>
+          <textarea name="alamat" required></textarea>
+      
+          <button type="submit">Kirim Pesanan</button>
+        </form>
+      
+        <p id="pesan-sukses" style="display:none; color:green; margin-top:10px;">Pesanan berhasil dikirim!</p>
+      </section>
+</body>
+</html>
